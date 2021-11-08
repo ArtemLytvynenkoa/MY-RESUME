@@ -4,15 +4,23 @@ body {
 }
 
 .main-section {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 1200px;
+  min-width: 380px;
   background-color: #fff;
   margin: 40px auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
     6px 6px 20px rgba(0, 0, 0, 0.1);
+  
+    
 }
 
+
+@media screen and (min-width: 760px) {   
+   .main-section {
+      display: flex;
+      flex-direction: row-reverse;
+      max-width: 1200px;
+    }
+}    
 /* main content section */
 
 .main-content-section {
@@ -183,9 +191,14 @@ body {
 
 .sidebar-section {
   background-color: #1e2939;
-  width: 370px;
   padding: 40px;
 }
+
+@media screen and (min-width: 760px) {   
+   .sidebar-section {
+      width: 380px;
+    }
+} 
 
 .contacts-section,
 .tech-skill-section {
@@ -246,3 +259,6 @@ body {
   line-height: 24px;
   color: #fff;
 }
+
+
+
